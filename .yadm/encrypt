@@ -1,1 +1,2 @@
-.m2/settings.xml##work
+.m2/settings.xml##*
+.ssh/config##*
