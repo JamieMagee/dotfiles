@@ -1,0 +1,95 @@
+[user]
+        name = Jamie Magee
+        email = jamie.magee@gmail.com
+
+[core]
+        # Avoid using # symbol for comments -- instead use ;
+        commentchar = ";"
+        safecrlf = false
+        autocrlf = input
+
+        # Use custom `.gitignore`
+        excludesfile = ~/.gitignore
+
+        # Speed up commands involving untracked files such as `git status`.
+        # https://git-scm.com/docs/git-update-index#_untracked_cache
+        untrackedCache = true
+
+[alias]
+        # List aliases
+        aliases = config --get-regexp alias
+
+        # Show verbose output about tags, branches or remotes
+        tags = tag -l
+        branches = branch -a
+        remotes = remote -v
+
+        # Switch to a branch, but don't create it
+        co = checkout
+
+        # Edit the global `.gitconfig` file
+        ec = config --global -e
+        up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+        cob = checkout -b
+        cm = !git add -A && git commit -m
+        bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+        bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
+        bl = branch -l
+        # Amend the currently staged files to the latest commit
+        amend = commit -a --amend
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        rb = !git fetch && git rebase origin/master
+        nw = !sh -c 'git diff -U0 -w --no-color "$@" | git apply --cached --ignore-whitespace --unidiff-zero -'
+
+        # Manage git user identities
+        microsoft = "!f() { git config --local user.email \"jamagee@microsoft.com\"; }; f"
+        gmail = "!f() { git config --local user.email \"jamie.magee@gmail.com\"; }; f"
+        whoami = !sh -c 'echo \"$(git config --get user.name) <$(git config --get user.email)>\"'
+
+[apply]
+
+        # Detect whitespace errors when applying a patch
+        whitespace = fix
+
+[push]
+        # https://git-scm.com/docs/git-config#git-config-pushdefault
+        default = simple
+
+[filter "lfs"]
+        clean = git-lfs clean %f
+        smudge = git-lfs smudge %f
+        required = true
+
+[color]
+        # Use colors in Git commands that are capable of colored output when
+        # outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+        ui = auto
+
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold # line info
+        old = red # deletions
+        new = green # additions
+
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
+# URL shorthands
+[url "git@github.com:"]
+    insteadOf = "gh:"
+    pushInsteadOf = "github:"
+    pushInsteadOf = "git://github.com/"
+[url "git://github.com/"]
+    insteadOf = "github:"
+[url "git@gist.github.com:"]
+    insteadOf = "gst:"
+    pushInsteadOf = "gist:"
+    pushInsteadOf = "git://gist.github.com/"
+[url "git://gist.github.com/"]
+    insteadOf = "gist:"
