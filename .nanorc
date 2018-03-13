@@ -16,7 +16,7 @@ set matchbrackets "(<[{)>]}"
 
 ## Constantly display the cursor position in the statusbar.  Note that
 ## this overrides "quickblank".
-set const
+set constantshow
 
 ## Use the blank line below the titlebar as extra editing space.
 set morespace
