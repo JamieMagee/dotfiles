@@ -35,6 +35,7 @@
         bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
         bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
         bl = branch -l
+
         # Amend the currently staged files to the latest commit
         amend = commit -a --amend
         lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -53,7 +54,7 @@
 
 [push]
         # https://git-scm.com/docs/git-config#git-config-pushdefault
-        default = simple
+        default = current
 
 [filter "lfs"]
         clean = git-lfs clean %f
@@ -80,6 +81,11 @@
         added = yellow
         changed = green
         untracked = cyan
+
+[help]
+        # Automatically correct and execute mistyped commands
+        autocorrect = 1
+
 # URL shorthands
 [url "git@github.com:"]
     insteadOf = "gh:"
