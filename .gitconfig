@@ -43,8 +43,8 @@
         nw = !sh -c 'git diff -U0 -w --no-color "$@" | git apply --cached --ignore-whitespace --unidiff-zero -'
 
         # Manage git user identities
-        microsoft = "!f() { git config --local user.email \"jamagee@microsoft.com\"; }; f"
-        gmail = "!f() { git config --local user.email \"jamie.magee@gmail.com\"; }; f"
+        work = "!f() { git config --local user.email \"jamagee@microsoft.com\"; }; f"
+        personal = "!f() { git config --local user.email \"jamie.magee@gmail.com\"; }; f"
         whoami = !sh -c 'echo \"$(git config --get user.name) <$(git config --get user.email)>\"'
 
 [apply]
