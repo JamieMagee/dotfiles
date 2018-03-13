@@ -8,5 +8,9 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+PARENT_COMMAND="$(ps -o comm= $PPID)"
+
 # Drop into fish shell
-exec fish
+if [ -t 1 ] && ! [[ "$PARENT_COMMAND" =~ ^(fish|pipenv)$ ]]; then
+    exec fish
+fi
