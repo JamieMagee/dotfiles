@@ -1,0 +1,18 @@
+{
+    "explorer.confirmDelete": false,
+    "files.autoSave": "afterDelay",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": true,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "git.enableSmartCommit": true,
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.keymap": "alternate"
+}
