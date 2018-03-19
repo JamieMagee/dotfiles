@@ -99,3 +99,6 @@
     pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
     insteadOf = "gist:"
+
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig.work
