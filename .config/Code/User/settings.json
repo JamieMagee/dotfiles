@@ -1,6 +1,8 @@
 {
     "explorer.confirmDelete": false,
     "files.autoSave": "afterDelay",
+    "terminal.integrated.fontFamily": "'Knack Nerd Font Mono'",
+    "terminal.integrated.setLocaleVariables": true,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
