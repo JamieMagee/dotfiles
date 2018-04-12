@@ -29,6 +29,9 @@
     # Switch to a branch, but don't create it
     co = checkout
 
+    # Switch to a branch by task ID
+    sco = "!f() { git branch -a | grep remotes | grep "$1" | xargs git checkout; }; f"
+
     # Edit the global `.gitconfig` file
     ec = config --global -e
     up = !git pull --rebase --prune $@ && git submodule update --init --recursive
