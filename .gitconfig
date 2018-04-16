@@ -29,13 +29,18 @@
     # Switch to a branch, but don't create it
     co = checkout
 
+    # Switch to a branch, and create it
+    cob = checkout -b
+
     # Switch to a branch by task ID
     sco = "!f() { git branch -a | grep remotes | grep "$1" | xargs git checkout; }; f"
 
     # Edit the global `.gitconfig` file
     ec = config --global -e
+
+    # Pull the latest changes from master, and rebase local changes on top of them
     up = !git pull --rebase --prune $@ && git submodule update --init --recursive
-    cob = checkout -b
+
     cm = !git add -A && git commit -m
     bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
     bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
@@ -43,8 +48,14 @@
 
     # Amend the currently staged files to the latest commit
     amend = commit -a --amend
+
+    # Pretty print the git log
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+    # Rebase the current branch onto the remote master
     rb = !git fetch && git rebase origin/master
+
+    # Only stage changes with actual changes, not just whitespace changes
     nw = !sh -c 'git diff -U0 -w --no-color "$@" | git apply --cached --ignore-whitespace --unidiff-zero -'
 
     # Manage git user identities
