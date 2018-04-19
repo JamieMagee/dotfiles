@@ -23,8 +23,12 @@
     "git.enableSmartCommit": true,
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
+    /*
+    * Plugins
+    */
     // Prettier
     "prettier.singleQuote": true,
+    // Gitlens
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -34,5 +38,9 @@
         "suppressNoRepositoryWarning": false,
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
+    },
+    // Markdownlint
+    "markdownlint.config": {
+        "default": true,
     }
 }
