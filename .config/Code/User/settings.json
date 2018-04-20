@@ -1,6 +1,6 @@
 {
     // Editor
-    "editor.fontFamily": "FuraCode Nerd Font",
+    "editor.fontFamily": "FuraCode Nerd Font Mono",
     "editor.fontLigatures": true,
     "editor.tabSize": 2,
     "editor.renderWhitespace": "all",
