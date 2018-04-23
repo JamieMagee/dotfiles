@@ -13,6 +13,7 @@
     "explorer.confirmDragAndDrop": false,
     // Workbench
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Base16 Dark Default",
     // Files
     "files.autoSave": "afterDelay",
     // Terminal
