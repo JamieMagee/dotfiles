@@ -12,8 +12,8 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     // Workbench
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Base16 Dark Default",
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.colorTheme": "Material Theme",
     // Files
     "files.autoSave": "afterDelay",
     // Terminal
