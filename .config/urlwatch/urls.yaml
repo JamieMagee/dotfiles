@@ -1,3 +1,7 @@
 kind: url
 name: Hvorfor flager bussen
 url: http://hvorforflagerbussen.dk/flagdage/
+---
+kind: url
+name: Asuswrt-Merlin
+url: https://asuswrt.lostrealm.ca/download
