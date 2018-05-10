@@ -6,3 +6,5 @@ set -g theme_display_date no
 
 # pipenv settings
 set -gx PIPENV_SHELL_FANCY 1
+
+set -gx EDITOR nano
