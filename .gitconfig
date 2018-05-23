@@ -16,7 +16,7 @@
     untrackedCache = true
 
     # Prettier diffs
-    pager = /usr/share/git/diff-highlight/diff-highlight | less -r
+    pager = /usr/share/git/diff-highlight/diff-highlight | less
 [alias]
     # List aliases
     aliases = config --get-regexp alias
