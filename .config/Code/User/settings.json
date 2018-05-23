@@ -27,8 +27,8 @@
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   /*
-    * Plugins
-    */
+  * Plugins
+  */
   // Prettier
   "prettier.singleQuote": true,
   // Gitlens
@@ -46,5 +46,7 @@
   // Markdownlint
   "markdownlint.config": {
     "default": true
-  }
+  },
+  // Code Spell Checker
+  "cSpell.language": "en-GB"
 }
