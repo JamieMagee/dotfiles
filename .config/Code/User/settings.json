@@ -19,7 +19,7 @@
   "files.autoSave": "afterDelay",
   "files.defaultLanguage": "markdown",
   // Terminal
-  "terminal.integrated.fontFamily": "Knack Nerd Font Mono",
+  "terminal.integrated.fontFamily": "FuraCode Nerd Font Mono",
   // Required for fish shell
   "terminal.integrated.setLocaleVariables": true,
   // Git
@@ -48,5 +48,6 @@
     "default": true
   },
   // Code Spell Checker
-  "cSpell.language": "en-GB"
+  "cSpell.language": "en-GB",
+  "materialTheme.fixIconsRunning": false
 }
