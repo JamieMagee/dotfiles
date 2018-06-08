@@ -1,10 +1,10 @@
 # Jamie's dotfiles
 
-# Requirements
+## Requirements
 
 - [yadm](https://aur.archlinux.org/packages/yadm-git/)
 
-# Installation
+## Installation
 
 ```sh
 yadm config local.class [work|home]
