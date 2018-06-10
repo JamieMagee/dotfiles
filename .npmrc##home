@@ -1,1 +1,6 @@
 loglevel=warn
+init.author.name=Jamie Magee
+init.author.email=jamie.magee@gmail.com
+init.author.url=jamiemagee.co.uk
+init.license=MIT
+init.version=0.0.1
