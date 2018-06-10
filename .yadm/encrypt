@@ -1,3 +1,4 @@
 .m2/settings.xml##*
 .ssh/config##*
 .config/urlwatch/urlwatch.yaml
+.npmrc##work
