@@ -15,6 +15,7 @@
   // Workbench
   "workbench.iconTheme": "eq-material-theme-icons",
   "workbench.colorTheme": "Material Theme",
+  "workbench.startupEditor": "none",
   // Files
   "files.autoSave": "afterDelay",
   "files.defaultLanguage": "markdown",
@@ -49,5 +50,6 @@
   },
   // Code Spell Checker
   "cSpell.language": "en-GB",
-  "materialTheme.fixIconsRunning": false
+  // Material theme
+  "materialTheme.fixIconsRunning": false,
 }
