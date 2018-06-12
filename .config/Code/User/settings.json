@@ -52,4 +52,8 @@
   "cSpell.language": "en-GB",
   // Material theme
   "materialTheme.fixIconsRunning": false,
+  // Latex workshop
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.message.error.show": false,
+  "latex-workshop.message.warning.show": false
 }
