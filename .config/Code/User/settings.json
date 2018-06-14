@@ -55,5 +55,6 @@
   // Latex workshop
   "latex-workshop.view.pdf.viewer": "tab",
   "latex-workshop.message.error.show": false,
-  "latex-workshop.message.warning.show": false
+  "latex-workshop.message.warning.show": false,
+  "latex-workshop.synctex.afterBuild.enabled": true
 }
