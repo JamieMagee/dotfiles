@@ -1,4 +1,5 @@
 .m2/settings.xml##*
+.gradle/gradle.properties##*
 .ssh/config##*
 .config/urlwatch/urlwatch.yaml
 .npmrc##work
