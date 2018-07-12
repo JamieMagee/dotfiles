@@ -25,14 +25,15 @@
   "terminal.integrated.setLocaleVariables": true,
   // Git
   "git.enableSmartCommit": true,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
+  "git.autofetch": true,
   /*
   * Plugins
   */
   // Prettier
   "prettier.singleQuote": true,
   // Gitlens
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
