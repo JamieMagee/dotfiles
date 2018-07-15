@@ -5,3 +5,7 @@ url: http://hvorforflagerbussen.dk/flagdage/
 kind: url
 name: Asuswrt-Merlin
 url: https://asuswrt.lostrealm.ca/download
+---
+kind: url
+name: Azurite
+url: https://img.shields.io/npm/v/azurite.svg
