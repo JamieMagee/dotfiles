@@ -26,6 +26,9 @@
   // Git
   "git.enableSmartCommit": true,
   "git.autofetch": true,
+  // Telemetry
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
   /*
   * Plugins
   */
