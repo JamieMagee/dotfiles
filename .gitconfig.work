@@ -1,2 +1,5 @@
 [user]
-    email = jamagee@microsoft.com
+  email = jamagee@microsoft.com
+[url "ssh://msengagement@vs-ssh.visualstudio.com:22/DefaultCollection/MSE/_ssh/"]
+  insteadof = "vsts:"
+
