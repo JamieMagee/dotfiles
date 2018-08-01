@@ -17,6 +17,12 @@
 
     # Prettier diffs
     pager = /usr/share/git/diff-highlight/diff-highlight | less
+
+[branch]
+    # Set tracking branch automatically
+    autosetupmerge = always
+    autosetuprebase = always
+
 [alias]
     # List aliases
     aliases = config --get-regexp alias
@@ -64,7 +70,6 @@
     whoami = !sh -c 'echo \"$(git config --get user.name) <$(git config --get user.email)>\"'
 
 [apply]
-
     # Detect whitespace errors when applying a patch
     whitespace = fix
 
