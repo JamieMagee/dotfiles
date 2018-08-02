@@ -61,6 +61,9 @@
     # Rebase the current branch onto the remote master
     rb = !git fetch && git rebase origin/master
 
+    # Track upstream with the same name
+    su = !git branch --set-upstream-to=origin/"$(git symbolic-ref --short HEAD)"
+
     # Only stage changes with actual changes, not just whitespace changes
     nw = !sh -c 'git diff -U0 -w --no-color "$@" | git apply --cached --ignore-whitespace --unidiff-zero -'
 
