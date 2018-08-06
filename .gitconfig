@@ -19,8 +19,7 @@
     pager = /usr/share/git/diff-highlight/diff-highlight | less
 
 [branch]
-    # Set tracking branch automatically
-    autosetupmerge = always
+    # Rebase automatically on git pull
     autosetuprebase = always
 
 [alias]
