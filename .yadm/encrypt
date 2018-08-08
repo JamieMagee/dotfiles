@@ -4,3 +4,4 @@
 .config/urlwatch/urlwatch.yaml
 .npmrc##work
 .kube/config##*
+.docker/config.json##*
