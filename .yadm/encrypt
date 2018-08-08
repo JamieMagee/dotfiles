@@ -3,3 +3,4 @@
 .ssh/config##*
 .config/urlwatch/urlwatch.yaml
 .npmrc##work
+.kube/config##*
