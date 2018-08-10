@@ -2,7 +2,7 @@ function setup-keychain -d "Setup SSH keys using keychain and lastpass"
 
   # First check we're logged in
   set lastpass_status (lpass status)
-  if string match -q -- "Logged ian*" $lastpass_status
+  if string match -q -- "Logged in*" $lastpass_status
 
     set -l keys home work
     # Then check all the required keys exist
