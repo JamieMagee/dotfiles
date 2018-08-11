@@ -1,6 +1,7 @@
 [user]
     name = Jamie Magee
     email = jamie.magee@gmail.com
+    signingkey = 4429B642B1718654
 
 [core]
     # Avoid using # symbol for comments -- instead use ;
@@ -17,6 +18,9 @@
 
     # Prettier diffs
     pager = /usr/share/git/diff-highlight/diff-highlight | less
+
+[commit]
+    gpgsign = true
 
 [branch]
     # Rebase automatically on git pull
