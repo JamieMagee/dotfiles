@@ -5,6 +5,9 @@ set -g theme_color_scheme terminal
 set -g theme_display_date no
 set -g theme_display_k8s_context yes
 
+# lastpass settings
+set -gx LPASS_AGENT_TIMEOUT 0
+
 # pipenv settings
 set -gx PIPENV_SHELL_FANCY 1
 
