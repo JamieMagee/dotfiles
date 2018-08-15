@@ -22,6 +22,7 @@ function rdp -d "Connect to my VM"
     /gdi:sw                       \
     /gfx                          \
     /gfx-progressive              \
+    +home-drive                   \
     /menu-anims                   \
     /microphone                   \
     /smart-sizing                 \
