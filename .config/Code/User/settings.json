@@ -21,6 +21,7 @@
   "files.defaultLanguage": "markdown",
   // Terminal
   "terminal.integrated.fontFamily": "FuraCode Nerd Font Mono",
+  "terminal.integrated.rendererType": "dom",
   // Required for fish shell
   "terminal.integrated.setLocaleVariables": true,
   // Git
@@ -29,6 +30,8 @@
   // Telemetry
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
+  // Womdpw
+  "window.titleBarStyle": "custom",
   /*
   * Plugins
   */
