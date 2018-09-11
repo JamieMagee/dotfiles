@@ -30,8 +30,10 @@
   // Telemetry
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
-  // Womdpw
+  // Window
   "window.titleBarStyle": "custom",
+  // Javscript
+  "javascript.updateImportsOnFileMove.enabled": "always",
   /*
   * Plugins
   */
