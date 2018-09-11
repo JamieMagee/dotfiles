@@ -4,12 +4,14 @@ function rdp -d "Connect to my VM"
   set -lx domain (lpass show "microsoft.com" --field=domain)
   set -lx host (lpass show "microsoft.com" --field=hostname)
 
-  set -lx ip (ip addr show | grep 'inet ' | awk '{print $2}' | cut -f1 -d'/' | tail -1)
+  set -lx ip (ip addr show | grep 'inet ' | awk '{print $2}' | cut -f1 -d'/')
 
-  if string match -q -v -- "10*" $ip
+  if string match -q -r -- ".* 10(\.\d{1,3}){3} .*" $ip
     set gateway /g:dublints.microsoft.com \
                 /scale:180
   end
+
+  echo $gateway
 
   xfreerdp                        \
     /aero                         \
