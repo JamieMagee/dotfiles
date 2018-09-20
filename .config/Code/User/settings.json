@@ -67,5 +67,6 @@
   "latex-workshop.message.warning.show": false,
   "latex-workshop.synctex.afterBuild.enabled": true,
   // shell-format
-  "shellformat.path": "shfmt"
+  "shellformat.path": "/usr/bin/shfmt",
+  "shellcheck.executablePath": "/usr/bin/shellcheck"
 }
