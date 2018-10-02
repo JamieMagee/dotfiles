@@ -5,4 +5,4 @@
 .npmrc##work
 .kube/config##*
 .docker/config.json##*
-.config/sqlops/User/settings.json
+.config/azuredatastudio/User/settings.json
