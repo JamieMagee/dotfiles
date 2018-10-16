@@ -14,6 +14,9 @@ set -gx PIPENV_SHELL_FANCY 1
 # ruby settings
 set -gx GEM_HOME (ruby -e 'print Gem.user_dir')
 
+# maven settings
+set -gx MAVEN_OPTS "-Xmx1024M -Xss128M -XX:MetaspaceSize=512M -XX:MaxMetaspaceSize=1024M -XX:+CMSClassUnloadingEnabled"
+
 # global settings
 set -gx EDITOR nano
 set -gx PATH (ruby -e 'print Gem.user_dir')/bin $PATH
