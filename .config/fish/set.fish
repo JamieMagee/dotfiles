@@ -19,4 +19,4 @@ set -gx MAVEN_OPTS "-Xmx1024M -Xss128M -XX:MetaspaceSize=512M -XX:MaxMetaspaceSi
 
 # global settings
 set -gx EDITOR nano
-set -gx PATH (ruby -e 'print Gem.user_dir')/bin $PATH
+set -gx PATH (ruby -e 'print Gem.user_dir')/bin ~/.local/bin $PATH
