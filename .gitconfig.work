@@ -1,5 +1,5 @@
 [user]
   email = jamagee@microsoft.com
-[url "ssh://msengagement@vs-ssh.visualstudio.com:22/DefaultCollection/MSE/_ssh/"]
-  insteadof = "vsts:"
+[url "git@ssh.dev.azure.com:v3/msengagement/MSE/"]
+  insteadof = "az:"
 
