@@ -12,6 +12,8 @@
   // Explorer
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  // Extensions
+  "extensions.ignoreRecommendations": true,
   // Workbench
   "workbench.iconTheme": "eq-material-theme-icons",
   "workbench.colorTheme": "Material Theme",
