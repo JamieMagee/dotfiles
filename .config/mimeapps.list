@@ -1,4 +1,5 @@
 [Default Applications]
+application/gzip=org.gnome.FileRoller.desktop;
 application/pdf=masterpdfeditor5.desktop
 application/vnd.ms-word.document.macroenabled.12=writer.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=writer.desktop
