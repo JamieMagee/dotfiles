@@ -17,6 +17,9 @@ set -gx GEM_HOME (ruby -e 'print Gem.user_dir')
 # maven settings
 set -gx MAVEN_OPTS "-Xmx1024M -Xss128M -XX:MetaspaceSize=512M -XX:MaxMetaspaceSize=1024M -XX:+CMSClassUnloadingEnabled"
 
+# pdsh settings
+set -gx PDSH_SSH_ARGS_APPEND "-q -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PreferredAuthentications=publickey"
+
 # global settings
 set -gx EDITOR nano
 if test -d (ruby -e 'print Gem.user_dir')/bin
