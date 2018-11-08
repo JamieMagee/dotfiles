@@ -1,14 +1,15 @@
 [Default Applications]
-application/gzip=org.gnome.FileRoller.desktop;
+application/gzip=org.gnome.FileRoller.desktop
 application/pdf=masterpdfeditor5.desktop
 application/vnd.ms-word.document.macroenabled.12=writer.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=writer.desktop
-application/x-java-archive=org.gnome.FileRoller.desktop;
-application/x-yaml=visual-studio-code.desktop;
-image/png=eog.desktop;
+application/x-java-archive=org.gnome.FileRoller.desktop
+application/x-shellscript=visual-studio-code.desktop
+application/x-yaml=visual-studio-code.desktop
+image/png=eog.desktop
 inode/directory=org.gnome.Nautilus.desktop
 text/html=chromium.desktop
-text/markdown=visual-studio-code.desktop;
+text/markdown=visual-studio-code.desktop
 x-scheme-handler/about=chromium.desktop
 x-scheme-handler/azuredatastudio=azuredatastudio.desktop
 x-scheme-handler/http=chromium.desktop
