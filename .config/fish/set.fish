@@ -20,6 +20,9 @@ set -gx MAVEN_OPTS "-Xmx1024M -Xss128M -XX:MetaspaceSize=512M -XX:MaxMetaspaceSi
 # pdsh settings
 set -gx PDSH_SSH_ARGS_APPEND "-q -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PreferredAuthentications=publickey"
 
+# graal
+set -gx GRAALVM_HOME /usr/lib/jvm/java-8-graal
+
 # global settings
 set -gx EDITOR nano
 if test -d (ruby -e 'print Gem.user_dir')/bin
