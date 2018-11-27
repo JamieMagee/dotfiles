@@ -1,7 +1,14 @@
-kind: url
 name: Hvorfor flager bussen
 url: http://hvorforflagerbussen.dk/flagdage/
+max_tries: 3
 ---
-kind: url
 name: Azurite
 url: https://img.shields.io/npm/v/azurite.svg
+max_tries: 3
+---
+name: Zulu JDK
+url: https://www.azul.com/downloads/zulu/zulu-windows/
+filter:
+  - xpath: '/html/body/section[3]/div/div'
+  - html2text: re
+max_tries: 3
