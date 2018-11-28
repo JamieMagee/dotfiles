@@ -13,6 +13,7 @@ inode/directory=org.gnome.Nautilus.desktop
 text/csv=visual-studio-code.desktop
 text/html=azuredatastudio.desktop
 text/markdown=visual-studio-code.desktop
+text/plain=visual-studio-code.desktop
 x-scheme-handler/about=chromium.desktop
 x-scheme-handler/azuredatastudio=azuredatastudio.desktop
 x-scheme-handler/http=chromium.desktop
