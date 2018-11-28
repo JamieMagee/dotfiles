@@ -70,5 +70,7 @@
   "latex-workshop.synctex.afterBuild.enabled": true,
   // shell-format
   "shellformat.path": "/usr/bin/shfmt",
-  "shellcheck.executablePath": "/usr/bin/shellcheck"
+  "shellcheck.executablePath": "/usr/bin/shellcheck",
+  // Powershell
+  "powershell.powerShellExePath": "/usr/bin/pwsh"
 }
