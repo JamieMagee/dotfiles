@@ -72,5 +72,6 @@
   "shellformat.path": "/usr/bin/shfmt",
   "shellcheck.executablePath": "/usr/bin/shellcheck",
   // Powershell
-  "powershell.powerShellExePath": "/usr/bin/pwsh"
+  "powershell.powerShellExePath": "/usr/bin/pwsh",
+  "powershell.integratedConsole.showOnStartup": false
 }
