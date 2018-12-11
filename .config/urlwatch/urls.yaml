@@ -19,3 +19,10 @@ filter:
   - xpath: '//*[@id="main"]/h2[3]'
   - html2text: re
 max_tries: 3
+---
+name: VSTS CD Manager
+url: https://pypi.org/project/vsts-cd-manager/
+filter:
+  - xpath: '//*[@id="history"]/section/div[1]'
+  - html2text: re
+max_tries: 3
