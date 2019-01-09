@@ -2,6 +2,7 @@
 application/gzip=org.gnome.FileRoller.desktop
 application/json=visual-studio-code.desktop
 application/pdf=masterpdfeditor5.desktop
+application/pdf=org.gnome.Evince.desktop
 application/vnd.ms-word.document.macroenabled.12=writer.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=writer.desktop
