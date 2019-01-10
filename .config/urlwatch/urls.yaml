@@ -23,6 +23,13 @@ filter:
   - html2text: re
 max_tries: 3
 ---
+name: JFX 12
+url: https://gluonhq.com/products/javafx/
+filter:
+  - xpath: '//div/table[2]'
+  - html2text: re
+max_tries: 3
+---
 name: VSTS CD Manager
 url: https://pypi.org/project/vsts-cd-manager/
 filter:
