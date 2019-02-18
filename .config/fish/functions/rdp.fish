@@ -6,9 +6,8 @@ function rdp -d "Connect to my VM"
 
   set -lx ip (ip addr show | grep 'inet ' | awk '{print $2}' | cut -f1 -d'/')
 
-  if string match -q -r -- ".* 10(\.\d{1,3}){3} .*" $ip
-    set gateway /g:dublints.microsoft.com \
-                /scale:180
+  if ! string match -q -r -- ".* 10(\.\d{1,3}){3} .*" $ip
+    set gateway /g:dublints.microsoft.com
   end
 
   echo $gateway
