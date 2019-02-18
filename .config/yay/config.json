@@ -12,6 +12,7 @@
   "answerdiff": "",
   "answeredit": "",
   "answerupgrade": "",
+  "removemake": "yes",
   "gitbin": "git",
   "gpgbin": "gpg",
   "gpgflags": "",
