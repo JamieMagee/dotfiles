@@ -6,6 +6,7 @@ application/pdf=org.gnome.Evince.desktop
 application/vnd.ms-word.document.macroenabled.12=writer.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=writer.desktop
+application/x-cd-image=org.gnome.FileRoller.desktop
 application/x-java-archive=org.gnome.FileRoller.desktop
 application/x-shellscript=visual-studio-code.desktop
 application/x-virtualbox-vbox=virtualbox.desktop
