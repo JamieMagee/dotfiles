@@ -23,10 +23,10 @@ filter:
   - html2text: re
 max_tries: 3
 ---
-name: JFX 12
+name: JFX 13
 url: https://gluonhq.com/products/javafx/
 filter:
-  - xpath: '//div/table[2]'
+  - xpath: '//div/table[3]'
   - html2text: re
 max_tries: 3
 ---
