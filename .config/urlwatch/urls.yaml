@@ -16,8 +16,8 @@ filter:
   - html2text: re
 max_tries: 3
 ---
-name: JDK 12
-url: https://jdk.java.net/12/
+name: JDK 13
+url: https://jdk.java.net/13/
 filter:
   - xpath: '//*[@id="main"]/h2[3]'
   - html2text: re
