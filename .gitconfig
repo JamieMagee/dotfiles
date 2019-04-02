@@ -17,7 +17,7 @@
     untrackedCache = true
 
     # Prettier diffs
-    pager = /usr/share/git/diff-highlight/diff-highlight | less
+    pager = diff-so-fancy | less --tabs=4 -RFX
 
 [commit]
     gpgsign = true
