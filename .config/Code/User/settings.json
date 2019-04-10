@@ -2,12 +2,13 @@
   // Editor
   "editor.fontFamily": "FuraCode Nerd Font Mono",
   "editor.fontLigatures": true,
-  "editor.tabSize": 2,
-  "editor.renderWhitespace": "all",
-  "editor.renderIndentGuides": true,
-  "editor.formatOnType": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.renderIndentGuides": true,
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
   "editor.wordWrap": "on",
   // Explorer
   "explorer.confirmDelete": false,
@@ -15,20 +16,28 @@
   // Extensions
   "extensions.ignoreRecommendations": true,
   // Workbench
-  "workbench.iconTheme": "eq-material-theme-icons",
   "workbench.colorTheme": "Material Theme",
+  "workbench.iconTheme": "eq-material-theme-icons",
   "workbench.startupEditor": "none",
   // Files
+  "files.associations": {
+    "**/azure-pipelines.yml": "azure-pipelines"
+  },
   "files.autoSave": "afterDelay",
   "files.defaultLanguage": "markdown",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
   // Terminal
   "terminal.integrated.fontFamily": "FuraCode Nerd Font Mono",
-  "terminal.integrated.rendererType": "dom",
   // Required for fish shell
   "terminal.integrated.setLocaleVariables": true,
   // Git
-  "git.enableSmartCommit": true,
   "git.autofetch": true,
+  "git.enableSmartCommit": true,
   // Telemetry
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
@@ -36,14 +45,16 @@
   "window.titleBarStyle": "custom",
   // Javscript
   "javascript.updateImportsOnFileMove.enabled": "always",
+  // Formatters
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   /*
-  * Plugins
-  */
+   * Plugins
+   */
   // Prettier
   "prettier.singleQuote": true,
   // Gitlens
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -54,24 +65,25 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  "gitlens.historyExplorer.enabled": true,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
   // Markdownlint
   "markdownlint.config": {
     "default": true
   },
   // Code Spell Checker
   "cSpell.language": "en-GB",
-  // Material theme
-  "materialTheme.fixIconsRunning": false,
   // Latex workshop
-  "latex-workshop.view.pdf.viewer": "tab",
   "latex-workshop.message.error.show": false,
   "latex-workshop.message.warning.show": false,
   "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.view.pdf.viewer": "tab",
   // shell-format
-  "shellformat.path": "/usr/bin/shfmt",
   "shellcheck.executablePath": "/usr/bin/shellcheck",
+  "shellformat.path": "/usr/bin/shfmt",
   // Powershell
+  "powershell.integratedConsole.showOnStartup": false,
   "powershell.powerShellExePath": "/usr/bin/pwsh",
-  "powershell.integratedConsole.showOnStartup": false
+  // VS IntelliCode
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
