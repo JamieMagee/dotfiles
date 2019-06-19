@@ -43,9 +43,13 @@
   "telemetry.enableTelemetry": false,
   // Window
   "window.titleBarStyle": "custom",
-  // Javscript
+  // JS & TS
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   // Formatters
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -55,9 +59,14 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  // Breadcrumbs
+  "breadcrumbs.enabled": true,
   /*
    * Plugins
    */
@@ -88,7 +97,6 @@
   "latex-workshop.synctex.afterBuild.enabled": true,
   "latex-workshop.view.pdf.viewer": "tab",
   // shell-format
-  "shellcheck.executablePath": "/usr/bin/shellcheck",
   "shellformat.path": "/usr/bin/shfmt",
   // Powershell
   "powershell.integratedConsole.showOnStartup": false,
