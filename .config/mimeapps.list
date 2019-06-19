@@ -13,6 +13,7 @@ application/x-virtualbox-vbox=virtualbox.desktop
 application/x-xz-compressed-tar=org.gnome.FileRoller.desktop
 application/x-yaml=visual-studio-code.desktop
 application/xml=visual-studio-code.desktop
+image/gif=eog.desktop;
 image/jpeg=eog.desktop
 image/png=eog.desktop
 inode/directory=org.gnome.Nautilus.desktop
@@ -31,3 +32,7 @@ x-scheme-handler/https=chromium.desktop
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop
 x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop
 x-scheme-handler/unknown=chromium.desktop
+
+[Added Associations]
+x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
