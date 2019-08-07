@@ -43,3 +43,7 @@ filter:
   - xpath: '((//div[contains(@class,"release-header")])//a)[1]'
   - html2text: re
 max_tries: 3
+---
+name: Microsoft Teams
+url: https://packages.microsoft.com/repos/ms-teams/pool/main
+max_tries: 3
