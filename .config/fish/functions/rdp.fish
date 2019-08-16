@@ -23,6 +23,7 @@ function rdp -d "Connect to my VM"
     /microphone                   \
     /smart-sizing                 \
     /sound                        \
+    +unmap-buttons                \
     /window-drag                  \
     /u:"$user"                    \
     /d:"$domain"                  \
