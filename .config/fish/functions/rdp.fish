@@ -19,6 +19,7 @@ function rdp -d "Connect to my VM"
     /gfx                          \
     /gfx-progressive              \
     +home-drive                   \
+    /log-level:WARN               \
     /menu-anims                   \
     /microphone                   \
     /smart-sizing                 \
