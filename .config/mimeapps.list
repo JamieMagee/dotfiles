@@ -1,4 +1,5 @@
 [Default Applications]
+application/epub+zip=calibre-ebook-viewer.desktop;
 application/gzip=org.gnome.FileRoller.desktop
 application/json=visual-studio-code.desktop
 application/pdf=masterpdfeditor5.desktop
@@ -18,7 +19,6 @@ image/jpeg=eog.desktop
 image/png=eog.desktop
 inode/directory=org.gnome.Nautilus.desktop
 text/csv=visual-studio-code.desktop
-text/html=azuredatastudio.desktop
 text/html=chromium.desktop
 text/markdown=visual-studio-code.desktop
 text/plain=visual-studio-code.desktop
@@ -32,6 +32,7 @@ x-scheme-handler/https=chromium.desktop
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop
 x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop
 x-scheme-handler/unknown=chromium.desktop
+x-scheme-handler/msteams=teams-insiders.desktop
 
 [Added Associations]
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
