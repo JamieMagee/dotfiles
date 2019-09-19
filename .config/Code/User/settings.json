@@ -102,5 +102,21 @@
   "powershell.integratedConsole.showOnStartup": false,
   "powershell.powerShellExePath": "/usr/bin/pwsh",
   // VS IntelliCode
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // Terraform
+  "terraform.indexing": {
+    "enabled": true,
+    "liveIndexing": true,
+    "delay": 500,
+    "exclude": [
+      ".terraform/**/*",
+      "**/.terraform/**/*"
+    ]
+  },
+  "terraform.languageServer": {
+    "enabled": true,
+    "args": []
+  },
+  // Omnisharp
+  "omnisharp.enableRoslynAnalyzers": true
 }
