@@ -105,8 +105,8 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   // Terraform
   "terraform.indexing": {
-    "enabled": true,
-    "liveIndexing": true,
+    "enabled": false,
+    "liveIndexing": false,
     "delay": 500,
     "exclude": [
       ".terraform/**/*",
