@@ -67,13 +67,14 @@
     # Track upstream with the same name
     su = !git branch --set-upstream-to=origin/"$(git symbolic-ref --short HEAD)"
 
-    # Only stage changes with actual changes, not just whitespace changes
-    nw = !sh -c 'git diff -U0 -w --no-color "$@" | git apply --cached --ignore-whitespace --unidiff-zero -'
-
     # Manage git user identities
     work = "!f() { git config --local user.email \"jamagee@microsoft.com\"; }; f"
     personal = "!f() { git config --local user.email \"jamie.magee@gmail.com\"; }; f"
     whoami = !sh -c 'echo \"$(git config --get user.name) <$(git config --get user.email)>\"'
+
+    # Checkout PRs
+    pr  = "!f() { git fetch -fu ${2:-$(git remote |grep ^upstream || echo origin)} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
+    pr-clean = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
 
 [apply]
     # Detect whitespace errors when applying a patch
