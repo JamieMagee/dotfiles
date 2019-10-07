@@ -21,6 +21,7 @@ function rdp -d "Connect to my VM"
     +home-drive                   \
     /log-level:WARN               \
     /menu-anims                   \
+    /multimon                     \
     /microphone                   \
     /smart-sizing                 \
     /sound                        \
