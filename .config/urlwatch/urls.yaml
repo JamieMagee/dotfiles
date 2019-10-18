@@ -16,20 +16,6 @@ filter:
   - html2text: re
 max_tries: 3
 ---
-name: JDK 14
-url: https://jdk.java.net/14/
-filter:
-  - xpath: '//*[@id="main"]/h2[3]'
-  - html2text: re
-max_tries: 3
----
-name: JFX 13
-url: https://gluonhq.com/products/javafx/
-filter:
-  - xpath: '//div/table[3]'
-  - html2text: re
-max_tries: 3
----
 name: VSTS CD Manager
 url: https://pypi.org/project/vsts-cd-manager/
 filter:
