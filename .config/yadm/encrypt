@@ -2,7 +2,7 @@
 .gradle/gradle.properties##*
 .ssh/config##*
 .config/urlwatch/urlwatch.yaml
-.npmrc##work
+.npmrc##class.work
 .kube/config##*
 .docker/config.json##*
 .config/azuredatastudio/User/settings.json
