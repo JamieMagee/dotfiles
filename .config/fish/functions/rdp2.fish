@@ -1,8 +1,8 @@
-function rdp -d "Connect to my VM"
+function rdp2 -d "Connect to my VM"
   set -lx user (lpass show "microsoft.com" --field=user)
   set -lx password (lpass show "microsoft.com" --password)
   set -lx domain (lpass show "microsoft.com" --field=domain)
-  set -lx host (lpass show "microsoft.com" --field=rdp1)
+  set -lx host (lpass show "microsoft.com" --field=rdp2)
 
   set -lx ip (ip addr show | grep 'inet ' | awk '{print $2}' | cut -f1 -d'/')
 
