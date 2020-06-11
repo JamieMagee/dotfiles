@@ -1,5 +1,5 @@
 [user]
   email = jamagee@microsoft.com
-[url "git@ssh.dev.azure.com:v3/powerbi/Customer360/"]
+[url "git@ssh.dev.azure.com:v3/mseng/AzureDevOps/"]
   insteadof = "az:"
 
