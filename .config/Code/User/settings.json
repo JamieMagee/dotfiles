@@ -33,8 +33,6 @@
   },
   // Terminal
   "terminal.integrated.fontFamily": "FuraCode Nerd Font Mono",
-  // Required for fish shell
-  "terminal.integrated.setLocaleVariables": true,
   // Git
   "git.autofetch": true,
   "git.enableSmartCommit": true,
@@ -100,7 +98,6 @@
   "shellformat.path": "/usr/bin/shfmt",
   // Powershell
   "powershell.integratedConsole.showOnStartup": false,
-  "powershell.powerShellExePath": "/usr/bin/pwsh",
   // VS IntelliCode
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   // Terraform
@@ -114,8 +111,10 @@
     ]
   },
   "terraform.languageServer": {
-    "enabled": true,
-    "args": []
+    "external": true,
+    "args": [
+      "serve"
+    ]
   },
   // Omnisharp
   "omnisharp.enableRoslynAnalyzers": true
