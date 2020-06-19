@@ -6,7 +6,7 @@
   "pacmanbin": "pacman",
   "pacmanconf": "/etc/pacman.conf",
   "tarbin": "bsdtar",
-  "redownload": "no",
+  "redownload": "yes",
   "rebuild": "no",
   "answerclean": "yes",
   "answerdiff": "",
