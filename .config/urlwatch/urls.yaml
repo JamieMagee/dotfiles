@@ -39,3 +39,9 @@ max_tries: 3
 name: pihole block lists
 url: https://v.firebog.net/hosts/lists.php?type=tick
 max_tries: 3
+---
+name: hunspell-da
+url: https://stavekontrolden.dk/?dictionaries=1
+filter:
+  - xpath: '//td[2]'
+max_tries: 3
