@@ -41,7 +41,7 @@ url: https://v.firebog.net/hosts/lists.php?type=tick
 max_tries: 3
 ---
 name: hunspell-da
-url: https://stavekontrolden.dk/?dictionaries=1
+url: https://stavekontrolden.dk/dictionaries/da_DK/da_DK.oxt
 filter:
-  - xpath: '//td[2]'
+  - sha1sum:
 max_tries: 3
