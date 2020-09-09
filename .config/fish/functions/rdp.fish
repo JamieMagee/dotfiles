@@ -22,6 +22,8 @@ function rdp -d "Connect to my VM"
     /log-level:WARN               \
     /menu-anims                   \
     /microphone                   \
+#    /scale:100                    \
+#    /scale-desktop:150            \
     /smart-sizing                 \
     /sound                        \
     +unmap-buttons                \
