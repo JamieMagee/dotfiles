@@ -39,3 +39,10 @@ max_tries: 3
 name: pihole block lists
 url: https://v.firebog.net/hosts/lists.php?type=tick
 max_tries: 3
+---
+name: Bicep
+url: https://github.com/Azure/bicep/releases/latest
+filter:
+  - xpath: '((//div[contains(@class,"release-header")])//a)[1]'
+  - html2text: re
+max_tries: 3
