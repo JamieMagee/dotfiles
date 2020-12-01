@@ -37,3 +37,6 @@ end
 if test -d ~/go/bin
     set -gx PATH ~/go/bin $PATH
 end
+if test -d ~/.cargo/bin
+    set -gx PATH ~/.cargo/bin $PATH
+end
