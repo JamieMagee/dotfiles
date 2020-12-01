@@ -16,26 +16,6 @@ filter:
   - html2text: re
 max_tries: 3
 ---
-name: U.S. embassy Denmark news
-url: https://dk.usembassy.gov/news-events/
-filter:
-  - xpath: '//article'
-  - html2text: re
-max_tries: 3
----
-name: U.S. embassy Copenhagen
-url: https://travel.state.gov/content/travel/resources/database/database.getVisaWaitTimes.html?cid=P54
-filter:
-  - html2text: re
-max_tries: 3
----
-name: Garmin 520 Plus Firmware
-url: http://gawisp.com/perry/edge/
-filter:
-  - xpath: '//a[starts-with(text(),"Edge520Plus")]'
-  - html2text: re
-max_tries: 3
----
 name: pihole block lists
 url: https://v.firebog.net/hosts/lists.php?type=tick
 max_tries: 3
