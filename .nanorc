@@ -18,9 +18,6 @@ set matchbrackets "(<[{)>]}"
 ## this overrides "quickblank".
 set constantshow
 
-## Use the blank line below the titlebar as extra editing space.
-set morespace
-
 ## Do extended regular expression searches by default.
 set regexp
 
@@ -30,9 +27,6 @@ set regexp
 ## cursor is already at that position, it will jump to the true
 ## beginning of the line.
 set smarthome
-
-## Use smooth scrolling as the default.
-set smooth
 
 ## Allow nano to be suspended.
 set suspend
