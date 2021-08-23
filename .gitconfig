@@ -20,7 +20,7 @@
     pager = diff-so-fancy | less --tabs=4 -RFX
 
 [commit]
-    gpgsign = true
+    gpgsign = false
 
 [branch]
     # Rebase automatically on git pull
